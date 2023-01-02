@@ -39,7 +39,7 @@ sudo mysql_secure_installation
 
     
 
-Habilite all permissões ao user root pra conseguri consexão ao mesmo
+Habilite all permissões ao user root pra conseguir consexões externas
 ```bash
  mysql -u root -p
  grant all privileges on *.* to root@localhost;
