@@ -24,8 +24,6 @@ Melhor solução até o momento, é instalar e configurar um ambiente de desenvo
 ## Instalação
 
 
-
-
 ### Mysql
 
 ```bash
@@ -37,11 +35,10 @@ siga os passos do mysql_secure_installation
 sudo mysql_secure_installation
 ```
 
-    
-
 Habilite all permissões ao user root pra conseguir consexões externas
 ```bash
- mysql -u root -p
+ sudo mysql -u root -p
+ 
  grant all privileges on *.* to root@localhost;
  grant all privileges on *.* to root@'%';
 ```
@@ -52,8 +49,6 @@ Observe se o mysql está ouvindo na porta 3306
  sudo apt install net-tools
  netstat -tlnp
 ```
-
-
 
 ### PHP 8.1
 
@@ -103,8 +98,6 @@ sudo a2enmod rewrite
 
 - criar arquivo eshop.conf ou o nome de sua preferência em /etc/apache2/sites-available/<eshop.conf>
 
-
-
 - add o conteúdo:
  ```bash
  <VirtualHost api.eshop.local:80>
@@ -118,10 +111,6 @@ sudo a2enmod rewrite
  ```
 
  - Adicionar novas linhas no arquivo /etc/hosts
-
- 
- ```bash
- ...
 
  127.0.0.1 api.eshop.local
  ::1   api.eshop.local
@@ -166,7 +155,13 @@ Add repositório no source.list
  sudo apt update
  sudo apt install php8.1
 ```
+#### access denied na conexão mysql
 
+```bash
+CREATE USER '<nome_user_preferir>'@'localhost' IDENTIFIED BY 'root';
+GRANT ALL PRIVILEGES ON *.* TO '<nome_user_preferir>'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
 
 ## Usado por
 
