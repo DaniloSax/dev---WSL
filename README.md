@@ -112,9 +112,11 @@ sudo a2enmod rewrite
 
  - Adicionar novas linhas no arquivo /etc/hosts
 
+ ```bash
  127.0.0.1 api.eshop.local
  ::1   api.eshop.local
  ``` 
+
 - Adicionar as mesmas linhas no arquivo hosts do windows (C:\Windows\System32\drivers\etc\hosts)
  
 - Para finalizar
@@ -158,8 +160,8 @@ Add repositório no source.list
 #### access denied na conexão mysql
 
 ```bash
-CREATE USER '<nome_user_preferir>'@'localhost' IDENTIFIED BY 'root';
-GRANT ALL PRIVILEGES ON *.* TO '<nome_user_preferir>'@'localhost' WITH GRANT OPTION;
+CREATE USER '<name_user_preferer>'@'localhost' IDENTIFIED BY 'root';
+GRANT ALL PRIVILEGES ON *.* TO '<name_user_preferer>'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
 
