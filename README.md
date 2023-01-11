@@ -121,7 +121,9 @@ sudo a2enmod rewrite
  
 - Para finalizar
 ```bash
+sudo a2dissite 000-default
 a2ensite eshop
+
 sudo service apache2 restart
 ```
 ## FAQ
