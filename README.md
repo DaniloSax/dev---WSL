@@ -13,9 +13,9 @@ Durante a experiência de desenvolvimento, me deparei com um problema que persis
 
 ![Logo](https://media.discordapp.net/attachments/1047887960718188635/1057723159530459177/image.png?width=960&height=145)
 
-Conversando com colegas e o próprio CTO Anderson. Concluímos que o problema era meu ambiente de desenvolvimento local.
-Por alguma razão o Windows não permite a escrita dos proxies doctrine.
-Melhor solução até o momento, é instalar e configurar um ambiente de desenvolviemnto Linux (WSL)
+Conversando com colegas e o próprio CTO. Concluímos que o problema era meu ambiente de desenvolvimento local.
+Por alguma razão o Windows 11 não permite a escrita dos proxies do doctrine.
+Melhor solução que encontrei até o momento, foi instalar e configurar um ambiente de desenvolviemnto Linux (WSL)
 
 ## Pré-requisitos
 
